@@ -1,21 +1,19 @@
 * {
     font-family: 'Newsreader', serif;
 }
-/* @Media screen and (max-width; 1028px) {
-    gottardiTitle {
-        font-size: 3rem;
-    }
-} */
 .bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
 }
 .containerPanel {
-    display: flex;
+    display: flexbox;
     align-items: center;
     justify-content: center;
 }
 .mainPanel {
-    width: 70%;
+    width: 1030px;
     height: 100%;
     margin: 15px 0 15px 0;
     top: 50px;
@@ -26,23 +24,41 @@
 }
 .menuContainer {
     position: fixed;
-    margin: 0 -200px 0 0;
+    margin: 0 0 0 0;
     float: right;
-    top: 5px;
-    right: 20%;
+    top: 23px;
+    right: 310px;
     z-index: 1;
+    width: 100px;
+    height: 81px;
+    background-color: rgb(100, 81, 55);
+    box-shadow: 0 0 15px #00000036;
+    border-radius: 8px;
+    transition: transform 0.17s ease-in-out;
+}
+@media screen and (max-width:875px) {
+    .menuContainer {
+        right: 160px;
+    }
 }
 .menu {
-    width: 120px;
-    height: 65px;
-    background-color: bisque;
-    border-radius: 10px;
-    
-}
-.menu h2 {
-    font-size: 1.4rem;
-    line-height: 5px;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Zilla Slab', serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 22px;
     text-align: center;
+    margin: 4.5px 0 0 0;
+    text-transform: uppercase; 
+}
+.menuContainer:hover {
+    transform: translate(-10px);
+}
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 244, 235);
 }
 .gottardiTitle {
     display: flexbox;
@@ -167,7 +183,6 @@
     color: #000000;
     margin: 80px 0 0 0;
 }
-
 .contributions {
     margin: 100px 0 0 0;
 }
@@ -184,16 +199,130 @@
 .footer {
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 .footerText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: white;
-    width: 450px;
-    height: 25px;
-    font-size: 24px;
-    background-color: bisque;
+    width: 315px;
+    height: 21px;
+    background-color: rgb(100, 81, 55);
     border-radius: 10px;
     bottom: 5px;
     position: fixed;
+    transition: transform 0.15s ease-in-out;
 }
+.footerText:hover {
+    transform: translate(0,-5.5px);
+    cursor: pointer;
+}
+.footerText a {
+    width: 315px;
+    text-decoration: none;
+    color: rgb(255, 244, 235);
+}
+.footerText h3 {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 4px 0 0 0;
+}
+.contactTitle {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0 0 0 0;
+}
+.contactText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -25px 0 0 0; 
+}
+.contactText2 {
+    width: 450px;
+    margin: 0 0 15px 0;
+}
+.contactText2 h3 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formContainer label {
+    margin: 0 0 0 0;
+
+}
+.formContainer input {
+    margin: 5px 0 10px 0;
+    width: 245px;
+    height: 20px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 7px #00000031;
+}
+.formContainer textarea {
+    margin: 5px 0 0 0;
+    width: 245px;
+    height: 85px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 7px #00000031;
+}
+.formContainer h3 {
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px #0000004d;
+    margin: 6px 0 0 0;
+}
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #2c1800;
+    color: #fffae9;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 25px 0 35px 0;
+    transition: transform 0.1s ease-in-out;
+}
+.formButton h3 {
+    margin: 4px 0 0 0;
+}
+.formButton:hover {
+    cursor: pointer;
+    transform: scale(1.033);
+}
+.aboutTitle {
+    text-align: center;
+}
+.aboutTitle h1 {
+    font-size: 4rem;
+}
+.aboutText {
+    text-align: center;
+}
+.aboutText h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.aboutText2 {
+    text-align: left;
+    margin: 50px 0 0 0;
+}
+.aboutText2 h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}   
